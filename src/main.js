@@ -6,11 +6,11 @@ import {createMenuTemplate} from './view/menu.js';
 import {createPopupTemplate} from './view/popup.js';
 import {createUserStatusTemplate} from './view/user-status.js';
 
+const FILM_LIST_CARDS = 5;
+const FILM_LIST_CARDS_SUGGESTION = 2;
 const pageHeader = document.querySelector('.header');
 const pageMain = document.querySelector('.main');
 const pageFooter = document.querySelector('.footer');
-const FILM_LIST_CARDS = 5;
-const FILM_LIST_CARDS_SUGGESTION = 2;
 
 renderTemplate(pageHeader, createUserStatusTemplate(), RenderPosition.BEFOREEND);
 renderTemplate(pageMain, createMenuTemplate(), RenderPosition.AFTERBEGIN);
